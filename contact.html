@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | MU-2 Flyers Association</title>
+    <meta name="description" content="Contact the MU-2 Flyers Association about membership, events, forum access, resources, or MU-2 questions.">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body style="--page-image: url('../images/mu2-hero.webp');">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="MU-2 Flyers Association home">
+          <img src="assets/images/logo-full.jpg" alt="">
+          <span>MU-2 Flyers<small>Association</small></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="nav-links" id="site-nav" aria-label="Primary navigation">
+          <a href="about.html">About</a>
+          <a href="membership.html" class="nav-join">Join</a>
+          <a href="forum.html">Forum</a>
+          <a href="events.html">Events</a>
+          <a href="resources.html">Resources</a>
+          <a href="safety-training.html">Safety &amp; Training</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Contact</p>
+          <h1>Start a membership request or ask a question.</h1>
+          <p>This GitHub Pages version uses email for membership and contact requests. Stripe membership checkout can be added later.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <aside class="contact-panel">
+            <h2>Reach the Association</h2>
+            <p>Email is the primary contact path for membership, event, and resource questions.</p>
+            <div class="link-list">
+              <a href="mailto:mu2flyersassociation@gmail.com">mu2flyersassociation@gmail.com <span>Email</span></a>
+              <a href="tel:+15708610513">570-861-0513 <span>Phone</span></a>
+              <a href="https://mu2.discourse.group/" target="_blank" rel="noopener">mu2.discourse.group <span>Forum</span></a>
+            </div>
+          </aside>
+
+          <section class="contact-panel" aria-labelledby="contact-form-title">
+            <h2 id="contact-form-title">Send an email draft</h2>
+            <form class="form-grid" data-contact-form>
+              <label>
+                Name
+                <input name="name" autocomplete="name" required>
+              </label>
+              <label>
+                Email
+                <input name="email" type="email" autocomplete="email" required>
+              </label>
+              <label>
+                Connection to the MU-2
+                <select name="role">
+                  <option>Current owner/operator</option>
+                  <option>Current pilot</option>
+                  <option>Prospective buyer</option>
+                  <option>Instructor or training provider</option>
+                  <option>Maintenance or service provider</option>
+                  <option>Other community member</option>
+                </select>
+              </label>
+              <label>
+                Message
+                <textarea name="message" required placeholder="Include aircraft make/model, tail number, serial number, or your connection to the MU-2 if applicable."></textarea>
+              </label>
+              <button class="button primary" type="submit">Create Email</button>
+              <p class="form-note">The button opens your email app with the message prefilled. No form data is stored by this static website.</p>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div><h2>MU-2 Flyers Association</h2><p>A member association for MU-2 owners, pilots, and the aviation community that supports them.</p></div>
+        <div><h3>Association</h3><div class="footer-links"><a href="about.html">About</a><a href="membership.html">Membership</a><a href="events.html">Events</a></div></div>
+        <div><h3>Community</h3><div class="footer-links"><a href="https://mu2.discourse.group/" target="_blank" rel="noopener">Forum</a><a href="resources.html">Resources</a><a href="safety-training.html">Safety &amp; Training</a></div></div>
+        <div><h3>Contact</h3><div class="footer-links"><a href="mailto:mu2flyersassociation@gmail.com">mu2flyersassociation@gmail.com</a><a href="tel:+15708610513">570-861-0513</a></div></div>
+      </div>
+      <p class="fine-print">This static site is built for GitHub Pages.</p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

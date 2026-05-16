@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+
+# Local development and QA artifacts
+qa-screenshots/
+archive/
+*.log
+
+# Dependency/build folders if the site is ever converted to a build-based setup
+node_modules/
+dist/
+build/
+.cache/
+
+# OS/editor metadata
+.idea/
+.vscode/
