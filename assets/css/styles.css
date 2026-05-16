@@ -30,6 +30,30 @@ body {
   line-height: 1.6;
 }
 
+body.home-page {
+  --hero-image: url("../images/mu2-hero.webp");
+}
+
+body.about-page,
+body.contact-page,
+body.forum-page,
+body.not-found-page {
+  --page-image: url("../images/mu2-hero.webp");
+}
+
+body.membership-page,
+body.resources-page {
+  --page-image: url("../images/mu2-article.webp");
+}
+
+body.events-page {
+  --page-image: url("../images/fly-in-jet-air-2026.webp");
+}
+
+body.training-page {
+  --page-image: url("../images/training.webp");
+}
+
 img,
 video {
   max-width: 100%;
