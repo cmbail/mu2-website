@@ -111,13 +111,12 @@ a {
 }
 
 .brand img {
-  width: 56px;
+  width: 64px;
   aspect-ratio: 1;
-  object-fit: cover;
-  object-position: center 58%;
-  border-radius: 50%;
-  border: 1px solid var(--line);
-  background: #fff;
+  object-fit: contain;
+  display: block;
+  border-radius: 0;
+  background: transparent;
 }
 
 .brand span {
@@ -441,6 +440,15 @@ h2 {
   object-fit: cover;
 }
 
+.logo-panel {
+  background: #fff;
+}
+
+.logo-panel img {
+  padding: clamp(1rem, 4vw, 2.5rem);
+  object-fit: contain;
+}
+
 .stat-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -762,8 +770,13 @@ textarea {
     color: var(--ink);
   }
 
-  .brand img {
-    background: #f7f4ed;
+  .brand img,
+  .logo-panel img {
+    filter: brightness(0) invert(1);
+  }
+
+  .logo-panel {
+    background: var(--navy-2);
   }
 
   .nav-links a:hover,
@@ -918,7 +931,7 @@ textarea {
   }
 
   .brand img {
-    width: 48px;
+    width: 54px;
   }
 
   .hero {
