@@ -170,17 +170,6 @@ a {
   outline: none;
 }
 
-.nav-links .nav-join {
-  background: var(--red);
-  color: white;
-}
-
-.nav-links .nav-join:hover,
-.nav-links .nav-join:focus-visible,
-.nav-links .nav-join[aria-current="page"] {
-  background: #982424;
-}
-
 .hero {
   min-height: min(760px, calc(100vh - 76px));
   display: flex;
@@ -297,6 +286,39 @@ h1 {
   background: var(--paper-strong);
   border-color: var(--line);
   color: var(--ink);
+}
+
+.live-traffic {
+  padding: 1rem 1.25rem;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
+.live-traffic-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(135deg, rgba(44, 111, 159, 0.12), rgba(217, 164, 65, 0.1)),
+    var(--paper-strong);
+  box-shadow: 0 14px 42px rgba(18, 48, 74, 0.08);
+}
+
+.live-traffic-card h2 {
+  max-width: 680px;
+  margin-bottom: 0.45rem;
+  font-size: clamp(1.45rem, 2.7vw, 2.4rem);
+  line-height: 1.02;
+}
+
+.live-traffic-card p:last-child {
+  max-width: 700px;
+  margin-bottom: 0;
+  color: var(--muted);
 }
 
 .section {
@@ -787,14 +809,6 @@ textarea {
     background: rgba(255, 255, 255, 0.08);
   }
 
-  .nav-links .nav-join,
-  .nav-links .nav-join:hover,
-  .nav-links .nav-join:focus-visible,
-  .nav-links .nav-join[aria-current="page"] {
-    background: var(--red);
-    color: #fff;
-  }
-
   .feature-card h3,
   .resource-card h3,
   .event-card h3,
@@ -952,6 +966,11 @@ textarea {
   .hero-actions,
   .action-row {
     align-items: stretch;
+  }
+
+  .live-traffic-card {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .button {
